@@ -32,6 +32,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
+/**
+ 张志远是个大傻逼...
+
+ @return <#return value description#>
+ */
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
