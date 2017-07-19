@@ -7,6 +7,7 @@
 //
 
 #import "BNRQuizViewController.h"
+//一种类扩展的形式.这里的属性是私有的.方法也是的.
 
 @interface BNRQuizViewController ()
 
@@ -19,6 +20,7 @@
 
 /**
  设置插座变量(outlets),插座变量是一种指向对象的指针.
+ 思考这里为什么要使用weak???
  */
 @end
 
@@ -46,10 +48,16 @@
     return self;
 }
 
+
+/**
+ 思考:数据的懒加载技术???
+ 思考:整个控制器的生命周期中,在周期内什么条件下调用什么方法???
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (IBAction)showQuestionButtonPressed:(UIButton *)sender

@@ -28,15 +28,17 @@
      事实上,这并不耽误事,你会发现没有什么变化,当init 调用initWithNibName:bundle方法,虽然传入的两个参数都为nil,但是UIViewController仍然会载入同名的XIB文件,这就是为什么要取同样的名字,这是一种约定俗称的规范,这样当控制器需要加载视图的时候,会自动载入同名的XIB文件.
      */
     self.window.rootViewController = quizVC;
+    //UIWindow类里面有属性---@property(nullable, nonatomic,strong) UIViewController *rootViewController
+    // default is nil
+
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
-    
+    //思考一个问题:关于UIViewController 中的loadView 什么时候会调用???
 /**
  张志远是个大傻逼...
 
- @return <#return value description#>
  */
 }
 
