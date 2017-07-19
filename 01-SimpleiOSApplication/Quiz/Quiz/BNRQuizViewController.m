@@ -17,6 +17,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *questionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *answerLabel;
 
+/**
+ 设置插座变量(outlets),插座变量是一种指向对象的指针.
+ */
 @end
 
 @implementation BNRQuizViewController
@@ -80,4 +83,7 @@
     self.answerLabel.text = answer;
 }
 
+/**
+ 设置动作(action),动作是一种方法.这种方法在视图和用户发生交互的时候会被调用.
+ */
 @end
