@@ -27,6 +27,7 @@
 		520EA750187B58F70075B2EC /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520EA74C187B58F70075B2EC /* Hypno@2x.png */; };
 		520EA751187B58F70075B2EC /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 520EA74D187B58F70075B2EC /* Time.png */; };
 		520EA752187B58F70075B2EC /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520EA74E187B58F70075B2EC /* Time@2x.png */; };
+		E50739BD1F21036700CBAA4D /* BNRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50739BC1F21036700CBAA4D /* BNRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		520EA74C187B58F70075B2EC /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		520EA74D187B58F70075B2EC /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		520EA74E187B58F70075B2EC /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		E50739BB1F21036700CBAA4D /* BNRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRViewController.h; sourceTree = "<group>"; };
+		E50739BC1F21036700CBAA4D /* BNRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				520EA741187B565A0075B2EC /* BNRHypnosisView.m */,
 				520EA743187B567E0075B2EC /* BNRHypnosisViewController.h */,
 				520EA744187B567E0075B2EC /* BNRHypnosisViewController.m */,
+				E50739BB1F21036700CBAA4D /* BNRViewController.h */,
+				E50739BC1F21036700CBAA4D /* BNRViewController.m */,
 				520EA746187B56EA0075B2EC /* BNRReminderViewController.h */,
 				520EA747187B56EA0075B2EC /* BNRReminderViewController.m */,
 				520EA749187B574A0075B2EC /* BNRReminderViewController.xib */,
@@ -280,6 +285,7 @@
 				520EA722187B562B0075B2EC /* BNRAppDelegate.m in Sources */,
 				520EA748187B56EA0075B2EC /* BNRReminderViewController.m in Sources */,
 				520EA742187B565A0075B2EC /* BNRHypnosisView.m in Sources */,
+				E50739BD1F21036700CBAA4D /* BNRViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +486,7 @@
 				520EA73C187B562B0075B2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		520EA73D187B562B0075B2EC /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +495,7 @@
 				520EA73F187B562B0075B2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
