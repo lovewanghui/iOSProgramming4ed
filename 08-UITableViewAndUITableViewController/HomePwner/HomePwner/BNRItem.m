@@ -16,6 +16,11 @@
 
 @implementation BNRItem
 
+/**
+ 用来创建并返回一个物品对象
+
+ @return 返回对象的引用
+ */
 + (id)randomItem
 {
     // Create an array of three adjectives
@@ -47,6 +52,14 @@
     return newItem;
 }
 
+/**
+ 指定初始化方法
+
+ @param name 物品名字
+ @param value 价格
+ @param sNumber 序列号
+ @return 商品的信息
+ */
 - (id)initWithItemName:(NSString *)name
         valueInDollars:(int)value
           serialNumber:(NSString *)sNumber
@@ -72,6 +85,9 @@
                      serialNumber:@""];
 }
 
+/**
+ 覆盖description方法
+ */
 - (NSString *)description
 {
     NSString *descriptionString =

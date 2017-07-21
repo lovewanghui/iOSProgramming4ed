@@ -15,6 +15,12 @@
 
 @end
 
+/**
+ 一般来说控制器用来控制应用的流程,
+ 例如:
+ 在删除数据之前必须提醒用户:"really delete this Item"?
+ 通常情况下,要通过某个ViewController来对象来创建和释放View对象,并负责显示和隐藏视图.
+ */
 @implementation BNRItemsViewController
 
 - (instancetype)init
