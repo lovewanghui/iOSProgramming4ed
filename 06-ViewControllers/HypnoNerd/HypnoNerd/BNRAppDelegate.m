@@ -12,6 +12,17 @@
 
 @implementation BNRAppDelegate
 
+/**
+ 视图控制器的初始化方法:::
+ 
+ 先init——>但是init会调用initWithNibName:bundle: 来创建视图控制器,这是由于initWithNibName:bundle:是ViewController的指定初始化方法.
+ 
+ 向试图控制器对象发送init消息,会自动调用initWithNibName:bundle: 并为两个参数都传入nil.
+ 
+ 虽然两个参数都为nil,但是UIViewController对象仍然会在应用程序包中查找和当前UIViewController子类同名的XIB文件.  所以,建议UIViewController子类和盖子类需要载入的XI
+ 件取相同的名称,这样当试图控制器需要加载视图的时候,会自动载入正确的XIB文件.
+
+ */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -27,7 +38,7 @@
     tabBarController.viewControllers = @[hvc, rvc];
 
     self.window.rootViewController = tabBarController;
-
+    //将tabBarViewController设置为UIWindow对象的rootViewController,此刻UIWindow对象会将该视图控制器的view作为子视图加入窗口.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

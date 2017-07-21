@@ -35,6 +35,11 @@
     return self;
 }
 
+/**
+ 当某个ViewController的view有两个子或者两个以上的子视图时,使用InterfaceBiulder创建视图的层级结构会方便很多
+ 当视图控制器从NIB文件中创建视图层次结构的时候,不需要覆盖loadView方法,默认的loadView方法会自动处理NIB文件中包含的
+ 视图层次结构.
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
